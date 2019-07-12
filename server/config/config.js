@@ -37,3 +37,9 @@ let urlDB = (process.env.NODE_ENV === 'dev') ? 'mongodb://localhost:27017/cafe' 
 // urlDB = 'mongodb+srv://alejandrocavita:OnePiece92@cluster0-s99xg.mongodb.net/cafe';
 
 process.env.URLDB = urlDB;
+
+//========================
+//Google ClientID
+//========================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '646786917462-jtvbhlaksk344e3uo7fuoreg699ppa6l.apps.googleusercontent.com';
