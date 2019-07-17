@@ -32,15 +32,13 @@ let verificarAdmin_Rol = (req, res, next) => {
 
     let usuario = req.usuario;
 
-    console.log(usuario);
-
     if (usuario.role === 'ADMIN_ROLE') {
         next();
     } else {
         return res.status(401).json({
             ok: false,
             err: {
-                message: 'Token no válido'
+                message: 'El usuario no es Administrador'
             }
         })
     }
